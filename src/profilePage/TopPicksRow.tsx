@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TopPicksRow.css';
-import { FaCode, FaBriefcase, FaCertificate, FaHandsHelping, FaProjectDiagram, FaEnvelope, FaBook } from 'react-icons/fa';
+import { FaCode, FaBriefcase, FaCertificate, FaProjectDiagram, FaEnvelope, FaBook } from 'react-icons/fa';
 
 type ProfileType = 'recruiter' | 'curious mind';
 

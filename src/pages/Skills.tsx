@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 import { FaPython, FaGitAlt } from 'react-icons/fa';
-import { SiCplusplus, SiNotion, SiGoogleanalytics, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiCoursera, SiJira } from 'react-icons/si';
+import { SiCplusplus, SiNotion, SiGoogleanalytics, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiJira } from 'react-icons/si';
 import { MdProductionQuantityLimits, MdCampaign, MdPeople } from 'react-icons/md';
 import { BsGraphUp } from 'react-icons/bs';
 
