@@ -1,44 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ProfileBanner.css';
 import PlayButton from '../components/PlayButton';
 import MoreInfoButton from '../components/MoreInfoButton';
-import { getProfileBanner } from '../queries/getProfileBanner';
-import { ProfileBanner as ProfileBannerType } from '../types';
 
 const ProfileBanner: React.FC = () => {
 
-
-  const [bannerData, setBannerData] = useState<ProfileBannerType | null>(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      const data = await getProfileBanner();
-      setBannerData(data);
-    }
-    fetchData();
-  }, []);
-
-  if (!bannerData) return <div>Loading...</div>;
-
   const handlePlayClick = () => {
-    window.open(bannerData.resumeLink.url, '_blank');
+    window.open('https://drive.google.com/file/d/1S89KTVi4iN2fiVK5HjKSJITz3J63NNzm/view?usp=sharing', '_blank');
   };
 
-  const handleLinkedinClick = () => { 
-    window.open(bannerData.linkedinLink, '_blank');
-  }
+  const handleLinkedinClick = () => {
+    window.open('https://www.linkedin.com/in/kumar-manas-557319148/', '_blank');
+  };
 
   return (
     <div className="profile-banner">
       <div className="banner-content">
-        <h1 className="banner-headline" id='headline'>{bannerData.headline}</h1>
+        <h1 className="banner-headline" id='headline'>Kumar Manas</h1>
         <p className="banner-description">
-          {bannerData.profileSummary}
+         Product Manager Intern @ Jubilant Ingrevia | MBA Candidate @ SCMHRD Pune | Ex-Testbook SME| Mechanical Engineer, IIIT Jabalpur | Patent Holder | 99.98%ile SNAP | Building towards AI Product Management
         </p>
-
         <div className="banner-buttons">
           <PlayButton onClick={handlePlayClick} label="Resume" />
-          <MoreInfoButton onClick={handleLinkedinClick} label="Linkedin" />
+          <MoreInfoButton onClick={handleLinkedinClick} label="LinkedIn" />
         </div>
       </div>
     </div>

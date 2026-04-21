@@ -2,33 +2,37 @@ import React, { useEffect, useState } from 'react';
 import './NetflixTitle.css';
 import netflixSound from './netflix-sound.mp3';
 import { useNavigate } from 'react-router-dom';
-import logoImage from '../src/images/logo-2.png'; // Update with the path to your logo
+import kumarLogo from './images/kumar-logo.png';
 
 const NetflixTitle = () => {
   const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
 
-  const handlePlaySound = () => {
-    const audio = new Audio(netflixSound);
-    audio.play().catch(error => console.error("Audio play error:", error));
-    setIsClicked(true); // Starts animation after clicking
-  };
+  useEffect(() => {
+    const startTimer = setTimeout(() => {
+      const audio = new Audio(netflixSound);
+      audio.play().catch(error => console.error("Audio play error:", error));
+      setIsClicked(true);
+    }, 1000);
+
+    return () => clearTimeout(startTimer);
+  }, []);
 
   useEffect(() => {
     if (isClicked) {
-      const timer = setTimeout(() => {
+      const navTimer = setTimeout(() => {
         navigate('/browse');
-      }, 4000);
-      return () => clearTimeout(timer);
+      }, 3000);
+      return () => clearTimeout(navTimer);
     }
   }, [isClicked, navigate]);
 
   return (
-    <div className="netflix-container" onClick={handlePlaySound}>
-      <img 
-        src={logoImage} 
-        alt="Custom Logo" 
-        className={`netflix-logo ${isClicked ? 'animate' : ''}`} 
+    <div className="netflix-container">
+      <img
+        src={kumarLogo}
+        alt="Kumar Manas"
+        className={`netflix-logo ${isClicked ? 'animate' : ''}`}
       />
     </div>
   );

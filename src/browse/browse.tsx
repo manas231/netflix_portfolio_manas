@@ -2,9 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfileCard from '../components/ProfileCard';
 import blueImage from '../images/blue.png';
-import greyImage from '../images/grey.png';
 import redImage from '../images/red.png';
-import yellowImage from '../images/yellow.png';
 import './browse.css';
 
 const Browse: React.FC = () => {
@@ -12,24 +10,14 @@ const Browse: React.FC = () => {
 
   const profiles = [
     {
-      name: "recruiter",
+      name: "Recruiter",
       image: blueImage,
-      backgroundGif: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ5eWwwbjRpdWM1amxyd3VueHhteTVzajVjeGZtZGJ1dDc4MXMyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif" // Dark storm clouds
+      backgroundGif: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRidjJ4OHg4czZ1dHp3MTB5ZHM3Mmg4ODRscHJiM3gwbXg1amd0dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6heBQSjt2IoA8/giphy.gif" // Dark storm clouds
     },
     {
-      name: "developer",
-      image: greyImage,
-      backgroundGif: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGNidDl5emZpejY2eGFxa2I4NW0zZGNpbWRlbnBrZ3N2dWhhbzM1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TFPdmm3rdzeZ0kP3zG/giphy.gif" // Flickering neon lights
-    },
-    {
-      name: "stalker",
+      name: "curious mind",
       image: redImage,
-      backgroundGif: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc28yMjMyZmJ6eWtxbmNwdDV6cXk4dWZmcjFhZms2cXBjN2h5ZDJjeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QjZXUBUr89CkiWLPjL/giphy.gif" // Dark, abstract digital lights
-    },
-    {
-      name: "adventurer",
-      image: yellowImage,
-      backgroundGif: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmxib24ycWo2cjlmazh0NGV5NTZ2Mzd2YWY0M2tvam9oYXBwYW1ocCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ERKMnDK6tkzJe8YVa3/giphy-downsized-large.gif" // Dark ocean waves at night
+      backgroundGif: "https://media.tenor.com/cfdARq561WIAAAAM/evil-hands.gif" // Dark, abstract digital lights
     },
   ];
 

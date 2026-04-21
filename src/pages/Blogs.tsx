@@ -4,25 +4,32 @@ import { FaMedium, FaDev } from 'react-icons/fa';
 
 const blogs = [
   {
-    title: "Make Your Rails Console Look Better",
-    platform: "Medium",
+    title: "My AI Product Management Journey",
+    platform: "Google Blogspot",
     icon: <FaMedium />,
-    link: "https://medium.com/@chintusamala96/make-your-rails-console-look-better-510988d40566",
-    description: "Learn tips to customize your Rails console for a better experience.",
+    link: "https://ai-productmananagement.blogspot.com/2026/04/my-ai-product-management-journey.html",
+    description: "A blog on the journey toward AI Product Management, exploring the motivation, learning roadmap, and mindset required to break into one of the most future-focused career paths.",
   },
   {
-    title: "Docker Fundas - My Version",
-    platform: "Medium",
+    title: "India vs England 2025 Test Series: A Cricket Analysis",
+    platform: "Google Blogspot",
     icon: <FaMedium />,
-    link: "https://medium.com/@chintusamala96/docker-fundas-my-version-7b9262bd90d4",
-    description: "An introductory guide to Docker fundamentals from my perspective.",
+    link: "https://indiavspakistantoday.blogspot.com/2025/09/india-vs-england-2025-test-series.html",
+    description: "An analysis of the 2025 India vs England Test series, highlighting India’s resilient 2-2 draw in a transitional phase after the retirements of Rohit Sharma and Virat Kohli.",
   },
   {
-    title: "Grape Gem in Ruby on Rails: Handling User Model and API Endpoint",
-    platform: "Dev.to",
+    title: "The Hound Of The Baskervilles - Quench your thirst for Suspense",
+    platform: "Google Blogspot",
     icon: <FaDev />,
-    link: "https://dev.to/samalasumanth0262/grape-gem-in-ruby-on-rails-handling-user-model-and-api-endpoint-g6d",
-    description: "A guide to using the Grape gem for API development in Ruby on Rails.",
+    link: "https://educationminusboredom.blogspot.com/2023/05/the-hound-of-baskervilles-quench-your.html",
+    description: "A review and summary of The Hound of the Baskervilles, highlighting its suspenseful plot, eerie setting, and engaging mystery.",
+  },
+  {
+    title: "Cricket as a Bridge or a Battlefield",
+    platform: "Google Blogspot",
+    icon: <FaDev />,
+    link: "https://indiavspakistantoday.blogspot.com/2025/01/as-bridge-or-battlefield-balancing.html",
+    description: "A thought-provoking article on the intersection of cricket, diplomacy, and national sentiment, using India-Pakistan sporting relations to examine how politics influences the spirit of the game.",
   },
 ];
 
@@ -30,7 +37,7 @@ const Blogs: React.FC = () => {
   return (
     <div className="blogs-container">
       <h2 className="blogs-title">✍️ My Blog Posts</h2>
-      <p className="blogs-intro">A collection of my thoughts and tutorials on software development.</p>
+      <p className="blogs-intro">Anything and everything I write including Product Management, Cricket Analysis, Book reviews. Few of many are listed below.</p>
       <div className="blogs-grid">
         {blogs.map((blog, index) => (
           <a href={blog.link} key={index} target="_blank" rel="noopener noreferrer" className="blog-card" style={{ '--delay': `${index * 0.2}s` } as React.CSSProperties}>
