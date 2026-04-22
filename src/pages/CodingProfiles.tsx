@@ -24,7 +24,7 @@ const profiles = [
     platform: "GeeksForGeeks",
     username: "kumarmanas2119",
     link: "https://geeksforgeeks.org/profile/kumarmanas2119",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png",
+    logo: "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
     bgColor: "#2F8D46",
     textColor: "#fff",
     stats: [
