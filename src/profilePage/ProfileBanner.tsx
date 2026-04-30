@@ -6,7 +6,7 @@ import MoreInfoButton from '../components/MoreInfoButton';
 const ProfileBanner: React.FC = () => {
 
   const handlePlayClick = () => {
-    window.open('https://drive.google.com/file/d/1DESIlc2s8Va9EBcezLaSGuRocDpAgTJ-/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1xk1CIzLAiOhfx58eSlKbo4QDlhc8cI-d/view?usp=sharing', '_blank');
   };
 
   const handleLinkedinClick = () => {
